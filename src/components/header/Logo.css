@@ -1,0 +1,27 @@
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
+.logo a {
+  font-family: "Mansalva";
+  text-decoration: none;
+  position: absolute;
+  right: 25px;
+  top: 2px;
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+@media (max-width: 999px) {
+  .logo {
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo a {
+    position: static;
+    font-size: 48px;
+  }
+}
