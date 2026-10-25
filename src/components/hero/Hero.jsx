@@ -1,14 +1,14 @@
 import "./Hero.css";
-import scene from "./images/TheScene.png";
-import willow from "./images/willow.png"
+import Slideshow from "../slideshow/Slideshow";
+import Welcome from "../hero/Welcome";
+
 const Hero = () => {
     return (
-        <section id="hero">
-            <img src={scene} alt="2000s scene character"/>
-            <img src={willow} alt="Willow Fanart The Owl House"/>
-
+        <section id="hero">\
+            <Welcome />
+            <Slideshow />
         </section>
-    )
+    );
 };
 
 export default Hero;
