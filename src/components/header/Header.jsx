@@ -1,5 +1,6 @@
 import "./Header.css";
 import Logo from "./Logo";
+import {NavLink} from "react-router-dom";
 import Nav from "../navigation/Navigation";
 
 
@@ -20,7 +21,7 @@ const Header = () => {
       <div className="deco-star s12"></div>
       <div className="deco-star s13"></div>
       <div className="deco-star s14"></div>
-
+      <NavLink to="/"><img id="logo" src={Logo} alt="a"></img></NavLink>
       <Logo />
       <button className="toggle-nav">&#9776;</button>
       <Nav />

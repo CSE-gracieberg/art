@@ -1,9 +1,12 @@
+import Hero from "../../components/hero/Hero"
+import About from "../../components/about/About"
 const Home = () => {
 return (
     <div id="home">
-        <h2>home</h2>
+        <Hero />
+        <About />
     </div>
 );
 
-}
+};
 export default Home;
