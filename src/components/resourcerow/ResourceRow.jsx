@@ -3,9 +3,6 @@ import playIcon from "../../images/play-arrow.png";
 import shopIcon from "../../images/shop.png";
 
 const ResourceRow = ({ resource }) => {
-
-  
-  const base = process.env.PUBLIC_URL || "";
   const icon = resource.category === "video" ? playIcon : shopIcon;
 
   return (
@@ -13,7 +10,7 @@ const ResourceRow = ({ resource }) => {
       <td>
         <img
           className="resource-logo"
-          src={`${base}/${resource.img_name}`}
+          src={resource.img_name}
           alt={resource.name}
         />
       </td>
@@ -24,7 +21,7 @@ const ResourceRow = ({ resource }) => {
         <a href={resource.link} target="_blank" rel="noreferrer">
           <img
             className="resource-icon"
-            src={`${base}/images/${icon}`}
+            src={icon}
             alt={`Visit ${resource.name}`}
           />
         </a>
