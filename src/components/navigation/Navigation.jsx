@@ -1,18 +1,29 @@
+import { NavLink } from "react-router-dom";
 import "./Navigation.css";
-import {NavLink} from "react-router-dom";
-import {HashLink} from "react-router-hash-link";
 
-const Nav = () => {
+const links = [
+  { label: "Home", path: "/" },
+  { label: "Tutorials", path: "/tutorials" },
+  { label: "Contests", path: "/contests" },
+  { label: "Community", path: "/community" },
+  { label: "Helpful Resources", path: "/resources" },
+];
+
+const Navigation = ({ isOpen, onNavigate }) => {
   return (
-    <nav className="main-nav">
-      <ul>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><HashLink to ="/#about">About</HashLink></li>
-        <li><NavLink to="/">Tutorials</NavLink></li>
+    <nav id="main-nav" className={isOpen ? "open" : ""}>
+      <ul className="nav-list">
+        {links.map((link) => (
+          <li key={link.path}>
+            <NavLink to={link.path} onClick={onNavigate}>
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
-
-  )
+  );
 };
 
-export default Nav;
+export default Navigation;
+

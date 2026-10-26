@@ -12,15 +12,15 @@
   z-index: 0;
 }
 
-.star1 { width: 30px; height: 30px; top: 10px; left: 20px; }
+.star1 { width: 30px; height: 30px; top: 10px; left: 220px; }
 .star2 { width: 20px; height: 20px; top: 60px; left: 200px; transform: rotate(15deg); }
 .star3 { width: 25px; height: 25px; top: 80px; left: 100px; transform: rotate(-10deg); }
 .s4 { width: 50px; height: 50px; top: 20px; left: 1200px; transform: rotate(-5deg); }
 .s5 { width: 22px; height: 22px; top: 10px; left: 1050px; transform: rotate(15deg); }
 .s6 { width: 14px; height: 14px; top: 90px; left: 500px; transform: rotate(30deg); }
-.s7 { width: 50px; height: 50px; top: 90px; left: 150px; transform: rotate(-18deg); }
+.s7 { width: 50px; height: 50px; top: 5px; left: 120px; transform: rotate(-18deg); }
 .s8 { width: 20px; height: 20px; top: 60px; left: 400px; transform: rotate(10deg); }
-.s9 { width: 16px; height: 16px; top: 40px; left: 60px; transform: rotate(-25deg); }
+.s9 { width: 16px; height: 16px; top: 40px; left: 600px; transform: rotate(-25deg); }
 .s10 { width: 28px; height: 28px; top: 45px; left: 300px; transform: rotate(5deg); }
 .s11 { width: 18px; height: 18px; top: 25px; left: 880px; transform: rotate(-10deg); }
 .s12 { width: 22px; height: 22px; top: 30px; left: 450px; transform: rotate(22deg); }
@@ -29,6 +29,23 @@
 
 .toggle-nav {
   display: none;
+}
+#logo {
+  position: absolute;
+  top: 5px;
+  left: 1px;
+  height: 100px;   
+  width: auto;    
+  z-index: 2;
+}
+
+@media (max-width: 999px) {
+  #logo {
+    position: static;
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 999px) {

@@ -4,7 +4,6 @@ import {HashRouter, Routes, Route} from 'react-router-dom';
 import Layout from "./layout";
 import Home from "./pages/home/Home";
 import Tutorials from "./pages/tutorials/Tutorials";
-import Header from "./components/header/Header";
 import "./index.css";
 
 const App = () => {

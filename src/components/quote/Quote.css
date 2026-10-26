@@ -1,0 +1,54 @@
+.star-wrapper {
+  position: relative;
+  width: 500px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+}
+
+.star-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--rainbow);
+  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+}
+
+.star {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: white;
+  clip-path: polygon(50% 0%, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 60px;
+}
+
+#quote h3 {
+  background: var(--rainbow);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 10px 10px 20px rgb(18, 53, 159, 0.25);
+  font-family: "Mansalva";
+  padding: 5px;
+  text-align: center;
+}
+
+#quote p {
+  max-width: 175px;
+  color: rgb(212, 135, 247);
+}
+
+@media (max-width: 999px) {
+  .star-wrapper {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}

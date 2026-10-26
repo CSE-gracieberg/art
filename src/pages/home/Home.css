@@ -1,0 +1,16 @@
+#btm-half {
+  background-color: var(--bg-dark);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 10px rgb(18, 53, 159, .25);
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;   /* the gap above the footer */
+}
+@media (max-width: 999px) {
+  #btm-half {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

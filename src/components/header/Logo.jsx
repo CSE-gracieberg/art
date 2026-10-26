@@ -1,5 +1,4 @@
 import "./Logo.css";
-import "./images/logo.png"
 
 const Logo = () => {
   return (

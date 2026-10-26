@@ -1,0 +1,17 @@
+/* Rainbow strip at the bottom of every page */
+#main-footer {
+  padding: 5px 0;
+  background: var(--rainbow);
+  color: white;
+  font-size: 14px;
+}
+
+#main-footer p {
+  margin: 4px 0;
+
+}
+
+#main-footer a {
+  text-decoration: none;
+  color: var(--accent);
+}
