@@ -1,0 +1,32 @@
+.winner-card {
+  flex: 1;
+  text-align: center;
+}
+
+.winner-card h4 {
+  text-align: center;
+  color: var(--highlight);
+  background-color: var(--bg-dark);
+  border-radius: 120px;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.winner-card img {
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  max-width: 100%;
+  object-fit: cover;
+  border: 5px ridge white;
+  border-radius: 5px;
+  box-shadow: 2px 4px rgb(18, 53, 159, .25);
+}
+
+@media (max-width: 999px) {
+  .winner-card h4 {
+    max-width: 100%;
+    border-radius: 40px;
+  }
+}

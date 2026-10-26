@@ -1,0 +1,80 @@
+#winning-art {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#winners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+#submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+
+#this-month-contest {
+  flex: 1;
+}
+
+#this-month-contest h2 {
+  background: var(--rainbow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 300px;
+  color: transparent;
+  -webkit-text-stroke: .2px white;
+  text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+  font-family: "Mansalva";
+  font-size: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+#this-month-contest p {
+  color: var(--accent);
+  font-size: x-large;
+  text-align: center;
+}
+
+#due {
+  color: var(--highlight);
+  background-color: var(--bg-dark);
+  text-align: center;
+  border-radius: 120px;
+  padding: 5px;
+}
+
+@media (min-width: 1000px) {
+  #winning-art {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #winners {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  #submit {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 999px) {
+  #this-month-contest h2 {
+    font-size: 32px;
+  }
+
+  #due {
+    border-radius: 40px;
+  }
+}

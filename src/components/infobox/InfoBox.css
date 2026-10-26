@@ -1,0 +1,25 @@
+.info-box {
+  flex: 1;
+  max-width: 450px;
+  background-color: var(--bg-dark);
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+.info-box h2 {
+  text-align: center;
+  color: var(--highlight);
+  font-size: x-large;
+}
+
+.info-box p {
+  color: var(--bg);
+  font-size: larger;
+}
+
+@media (max-width: 999px) {
+  .info-box {
+    max-width: 100%;
+    border-radius: 30px;
+  }
+}

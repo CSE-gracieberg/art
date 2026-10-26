@@ -1,0 +1,10 @@
+.resource-logo,
+.resource-icon {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+}
+
+.resource-icon:hover {
+  filter: hue-rotate(180deg) saturate(150%) brightness(1.1);
+}

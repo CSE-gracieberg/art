@@ -1,0 +1,54 @@
+.resource-section h1 {
+  background: var(--rainbow);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 225px 100px;
+  color: transparent;
+  -webkit-text-stroke: .2px white;
+  text-shadow: 10px 10px 20px rgb(18, 53, 159, .25);
+  font-family: "Mansalva";
+  padding: 5px;
+  text-align: center;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.table-colors {
+  border-collapse: collapse;
+  width: 100%;
+  background: var(--bg-dark);
+  font-family: monospace, Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.table-colors th {
+  background-color: var(--highlight);
+  color: var(--bg-dark);
+  padding: 12px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.table-colors td {
+  padding: 10px;
+  border: 2px solid var(--highlight);
+  color: var(--bg);
+}
+
+.table-colors tr:hover td {
+  filter: saturate(200%);
+  transition: filter 0.2s ease;
+}
+
+@media (max-width: 999px) {
+  .table-colors {
+    font-size: 14px;
+    min-width: 600px;
+  }
+
+  .table-colors th,
+  .table-colors td {
+    padding: 6px;
+  }
+}
