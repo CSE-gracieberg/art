@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/art/static/css/main.7edcb991.css",
-    "main.js": "/art/static/js/main.0d0b9e46.js",
+    "main.css": "/art/static/css/main.49665de7.css",
+    "main.js": "/art/static/js/main.ba3686ad.js",
+    "static/media/pinkman.png": "/art/static/media/pinkman.4f00757f79e8919b3957.png",
+    "static/media/trainer.png": "/art/static/media/trainer.253ec7c848ffcc27f747.png",
+    "static/media/feildsanddragons.jpeg": "/art/static/media/feildsanddragons.c422ef9fee194b6958ac.jpeg",
+    "static/media/willow.png": "/art/static/media/willow.8b93d2b3592f94cd8832.png",
+    "static/media/scene.png": "/art/static/media/scene.b046233de9649734256c.png",
+    "static/media/logo.png": "/art/static/media/logo.d237b359fadf20bf8e16.png",
+    "static/media/reimagined.jpeg": "/art/static/media/reimagined.ffe0cd0fcf83e44db359.jpeg",
     "index.html": "/art/index.html",
-    "main.7edcb991.css.map": "/art/static/css/main.7edcb991.css.map",
-    "main.0d0b9e46.js.map": "/art/static/js/main.0d0b9e46.js.map"
+    "main.49665de7.css.map": "/art/static/css/main.49665de7.css.map",
+    "main.ba3686ad.js.map": "/art/static/js/main.ba3686ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.7edcb991.css",
-    "static/js/main.0d0b9e46.js"
+    "static/css/main.49665de7.css",
+    "static/js/main.ba3686ad.js"
   ]
 }
