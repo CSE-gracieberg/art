@@ -1,0 +1,21 @@
+
+.tut-section h1 {
+  color: var(--highlight);
+  background-color: var(--bg-dark);
+  text-align: left;
+  padding: 10px 20px;
+  border-radius: 120px;
+}
+
+.tut-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 999px) {
+  .tut-section h1 {
+    text-align: center;
+    border-radius: 40px;
+  }
+}

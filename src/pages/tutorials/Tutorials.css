@@ -1,4 +1,28 @@
-#listings {
-    display:grid;
-    grid-template-columns: auto auto auto;
+#other-source {
+  max-width: 500px;
+  background: var(--bg-dark);
+  color: var(--bg);
+  padding: 5px 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 4px rgb(42, 79, 108, .25);
+  margin-bottom: 20px;
+}
+
+#other-source a {
+  text-decoration: none;
+  color: var(--bg);
+}
+
+#other-source a:hover {
+  color: var(--highlight);
+}
+
+#other-source p {
+  text-align: center;
+}
+
+@media (max-width: 999px) {
+  #other-source {
+    max-width: 100%;
+  }
 }

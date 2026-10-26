@@ -19,9 +19,8 @@ const App = () => {
           <Route path="community" element={<Community />} />
           <Route path="contests" element={<Contests />} />
           <Route path="resources" element={<Resources />} />
-
-
         </Route>
+        
       </Routes>
     </HashRouter>
   );

@@ -1,8 +1,12 @@
 import "./ResourceRow.css";
+import playIcon from "../../images/play-arrow.png";
+import shopIcon from "../../images/shop.png";
 
 const ResourceRow = ({ resource }) => {
+
+  
   const base = process.env.PUBLIC_URL || "";
-  const icon = resource.category === "video" ? "play-arrow.png" : "shop.png";
+  const icon = resource.category === "video" ? playIcon : shopIcon;
 
   return (
     <tr>
