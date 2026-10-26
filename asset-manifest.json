@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/art/static/css/main.49665de7.css",
-    "main.js": "/art/static/js/main.ba3686ad.js",
+    "main.css": "/art/static/css/main.ba521dc0.css",
+    "main.js": "/art/static/js/main.0e673d58.js",
     "static/media/pinkman.png": "/art/static/media/pinkman.4f00757f79e8919b3957.png",
     "static/media/trainer.png": "/art/static/media/trainer.253ec7c848ffcc27f747.png",
     "static/media/feildsanddragons.jpeg": "/art/static/media/feildsanddragons.c422ef9fee194b6958ac.jpeg",
@@ -9,12 +9,20 @@
     "static/media/scene.png": "/art/static/media/scene.b046233de9649734256c.png",
     "static/media/logo.png": "/art/static/media/logo.d237b359fadf20bf8e16.png",
     "static/media/reimagined.jpeg": "/art/static/media/reimagined.ffe0cd0fcf83e44db359.jpeg",
+    "static/media/artsherpa.png": "/art/static/media/artsherpa.853dcf745efa4dffce02.png",
+    "static/media/superraedizzle.png": "/art/static/media/superraedizzle.2f18da13028551ffd66b.png",
+    "static/media/samdoesarts.png": "/art/static/media/samdoesarts.77fabfec1ea79f1679b1.png",
+    "static/media/smarthistory.png": "/art/static/media/smarthistory.8e277ed5a29809ff19ea.png",
+    "static/media/artkids.png": "/art/static/media/artkids.89bdb1e77e676e30c203.png",
+    "static/media/crayola.png": "/art/static/media/crayola.cf684d7a368eaffd2d98.png",
+    "static/media/amazon.png": "/art/static/media/amazon.5e0cb899faf4b5a35ed5.png",
+    "static/media/michaels.png": "/art/static/media/michaels.662e7026c13870573fb9.png",
     "index.html": "/art/index.html",
-    "main.49665de7.css.map": "/art/static/css/main.49665de7.css.map",
-    "main.ba3686ad.js.map": "/art/static/js/main.ba3686ad.js.map"
+    "main.ba521dc0.css.map": "/art/static/css/main.ba521dc0.css.map",
+    "main.0e673d58.js.map": "/art/static/js/main.0e673d58.js.map"
   },
   "entrypoints": [
-    "static/css/main.49665de7.css",
-    "static/js/main.ba3686ad.js"
+    "static/css/main.ba521dc0.css",
+    "static/js/main.0e673d58.js"
   ]
 }
