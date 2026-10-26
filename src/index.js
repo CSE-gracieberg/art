@@ -4,6 +4,7 @@ import {HashRouter, Routes, Route} from 'react-router-dom';
 import Layout from "./layout";
 import Home from "./pages/home/Home";
 import Tutorials from "./pages/tutorials/Tutorials";
+import Community from "./pages/community/Community";
 import "./index.css";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="tutorials" element={<Tutorials />} />
+          <Route path="community" element={<Community />} />
         </Route>
       </Routes>
     </HashRouter>
