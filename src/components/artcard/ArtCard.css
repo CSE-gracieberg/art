@@ -12,3 +12,7 @@
   border: 2px ridge white;
   border-radius: 10px;
 }
+
+.art-img img {
+  cursor: zoom-in;
+}

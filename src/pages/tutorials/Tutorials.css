@@ -20,6 +20,10 @@
 #other-source p {
   text-align: center;
 }
+.featured-title {
+  text-align: center;
+  color: var(--accent);
+}
 
 @media (max-width: 999px) {
   #other-source {

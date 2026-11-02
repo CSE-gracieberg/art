@@ -1,4 +1,11 @@
+/* Hide the toggle button on desktop */
+.nav-toggle {
+  display: none;
+}
+
+/* Desktop navigation */
 #main-nav {
+  display: block;
   position: absolute;
   left: 5px;
   top: 90px;
@@ -20,7 +27,7 @@
   white-space: nowrap;
 }
 
-/* separator between items, replaces the <hr> tags */
+/* Separators between links */
 .nav-list li + li {
   border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
@@ -30,7 +37,7 @@
   padding: 0 10px;
   color: white;
   text-decoration: none;
-  text-shadow: 5px 5px 10px rgb(18, 53, 159, .25);
+  text-shadow: 5px 5px 10px rgba(18, 53, 159, 0.25);
 }
 
 .nav-list a:hover {
@@ -42,11 +49,31 @@
   font-weight: bold;
 }
 
-/* Mobile: vertical menu */
+/* Mobile navigation */
 @media (max-width: 999px) {
+  /* Show the toggle button */
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* Keep the menu hidden when closed */
   #main-nav {
+    display: none;
     position: static;
     width: 100%;
+  }
+
+  /* Show the menu when the button is clicked */
+  #main-nav.open {
+    display: block;
   }
 
   .nav-list {

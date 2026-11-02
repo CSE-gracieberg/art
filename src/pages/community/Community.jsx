@@ -7,6 +7,10 @@ import pinkman from "../../images/pinkman.png";
 import scene from "../../images/scene.png";
 import willow from "../../images/willow.png";
 import trainer from "../../images/trainer.png";
+//new
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 //  this array will come from JSON file eventually (i dont have time)
 const artworks = [
@@ -19,16 +23,28 @@ const artworks = [
 ];
 
 const Community = () => {
+  const [index, setIndex] = useState(-1);
   return (
     <div id="community">
       <PageTitle
         title="COMMUNITY"
         subtitle="Check out art from other artists like you! Artwork is submitted through contests or the google form!"
       />
-
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={artworks.map((art) => ({ src: art.image, alt: art.title }))}
+      />
       <div id="uploaded-imgs">
-        {artworks.map((art, index) => (
-          <ArtCard key={index} image={art.image} title={art.title} artist={art.artist} />
+        {artworks.map((art, i) => (
+          <ArtCard
+            key={i}
+            image={art.image}
+            title={art.title}
+            artist={art.artist}
+            onClick={() => setIndex(i)}
+          />
         ))}
       </div>
 

@@ -1,4 +1,5 @@
 import "./Tutorials.css";
+import VideoEmbed from "../../components/videoembed/VideoEmbed";
 import { Link } from "react-router-dom";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import TutorialSection from "../../components/tutorialsection/TutorialSection";
@@ -51,6 +52,10 @@ const Tutorials = () => {
         title="TUTORIALS"
         subtitle="Learn how to paint, draw, color, and more right here! You don't have to follow these in any order! Take it at your own pace ★"
       />
+
+      <h2 className="featured-title">&#9733; Featured Tutorial &#9733;</h2>
+      <VideoEmbed videoId="7nF_9OUcng0" title="Featured art tutorial" />
+      <SplitBar />
 
       {sections.map((section, index) => (
         <div key={section.title}>

@@ -61,8 +61,33 @@
     padding: 0 30px;
   }
 
+
+  .topic-select {
+  width: 150px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.contest-star button {
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.form-status {
+  min-height: 1.2em;
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+@media (max-width: 999px) {
+  .topic-select {
+    width: 100px;
+  }
+}
+
   .contest-star input,
   .contest-star textarea {
-    width: 100px;
+    width: 50px;
   }
 }
