@@ -1,6 +1,7 @@
 import "./ResourceRow.css";
 import playIcon from "../../images/play-arrow.png";
 import shopIcon from "../../images/shop.png";
+import { API_URL } from "../../api";
 
 const ResourceRow = ({ resource }) => {
   const icon = resource.category === "video" ? playIcon : shopIcon;
@@ -10,7 +11,7 @@ const ResourceRow = ({ resource }) => {
       <td>
         <img
           className="resource-logo"
-          src={resource.img_name}
+          src={`${API_URL}/${resource.img_name}`}
           alt={resource.name}
         />
       </td>
@@ -19,11 +20,7 @@ const ResourceRow = ({ resource }) => {
       <td>{resource.skill_level}</td>
       <td>
         <a href={resource.link} target="_blank" rel="noreferrer">
-          <img
-            className="resource-icon"
-            src={icon}
-            alt={`Visit ${resource.name}`}
-          />
+          <img className="resource-icon" src={icon} alt={`Visit ${resource.name}`} />
         </a>
       </td>
     </tr>

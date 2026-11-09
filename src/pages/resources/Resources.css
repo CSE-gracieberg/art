@@ -1,0 +1,6 @@
+.resources-message {
+  text-align: center;
+  color: var(--accent);
+  font-size: x-large;
+  padding: 40px 20px;
+}

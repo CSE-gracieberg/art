@@ -31,13 +31,7 @@ const Header = () => {
         <img id="logo" src={logoImg} alt="Artscovery logo" />
       </NavLink>
       <Logo />
-      <button
-        className="toggle-nav"
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
-      >
-        &#9776;
-      </button>
+      
       <Nav isOpen={menuOpen} onNavigate={() => setMenuOpen(false)} />
     </header>
   );
