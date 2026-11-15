@@ -7,6 +7,7 @@ import pinkman from "../../images/pinkman.png";
 import scene from "../../images/scene.png";
 import willow from "../../images/willow.png";
 import trainer from "../../images/trainer.png";
+import AddArt from "../../components/addart/AddArt";
 //new
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
@@ -23,6 +24,10 @@ const artworks = [
 ];
 
 const Community = () => {
+
+    const [art, setArt] = useState([]);
+    const [pending, setPending] = useState(true);
+    const [showAddDialog, setShowAddDialog] = useState(false);
   const [index, setIndex] = useState(-1);
   return (
     <div id="community">

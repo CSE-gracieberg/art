@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import TutorialSection from "../../components/tutorialsection/TutorialSection";
 import SplitBar from "../../components/splitbar/Splitbar";
+import {useState, useEffect} from "react";
+
+
 
 // Later this array will come from your JSON file
 const sections = [
@@ -46,6 +49,8 @@ const sections = [
 ];
 
 const Tutorials = () => {
+
+  const [showDialog, setShowDialog] = useState(false);
   return (
     <div id="tutorials">
       <PageTitle
