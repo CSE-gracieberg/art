@@ -3,11 +3,16 @@ import playIcon from "../../images/play-arrow.png";
 import shopIcon from "../../images/shop.png";
 import { API_URL } from "../../api";
 
-const ResourceRow = ({ resource }) => {
+const ResourceRow = ({ resource, onSelect }) => {
   const icon = resource.category === "video" ? playIcon : shopIcon;
 
   return (
-    <tr>
+    <tr
+      className="resource-row"
+      onClick={() => onSelect(resource)}
+      onKeyDown={(e) => e.key === "Enter" && onSelect(resource)}
+      tabIndex={0}
+    >
       <td>
         <img
           className="resource-logo"
@@ -19,7 +24,12 @@ const ResourceRow = ({ resource }) => {
       <td>{resource.description}</td>
       <td>{resource.skill_level}</td>
       <td>
-        <a href={resource.link} target="_blank" rel="noreferrer">
+        <a
+          href={resource.link}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
           <img className="resource-icon" src={icon} alt={`Visit ${resource.name}`} />
         </a>
       </td>

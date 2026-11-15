@@ -1,8 +1,8 @@
 import "./ResourceTable.css";
 import ResourceRow from "../resourcerow/ResourceRow";
 
-const ResourceTable = ({ title, nameLabel, detailLabel, resources }) => {
-  return (
+const ResourceTable = ({ title, nameLabel, detailLabel, resources, onSelect }) => {
+return (
     <div className="resource-section">
       <h1>{title}</h1>
       <div className="table-scroll">
@@ -18,8 +18,7 @@ const ResourceTable = ({ title, nameLabel, detailLabel, resources }) => {
           </thead>
           <tbody>
             {resources.map((resource) => (
-              <ResourceRow key={resource._id} resource={resource} />
-            ))}
+            <ResourceRow key={resource._id} resource={resource} onSelect={onSelect} />            ))}
           </tbody>
         </table>
       </div>

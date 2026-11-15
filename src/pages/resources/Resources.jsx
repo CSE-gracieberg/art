@@ -3,11 +3,13 @@ import "./Resources.css";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import ResourceTable from "../../components/resourcetable/ResourceTable";
 import { API_URL } from "../../api";
+import ResourceDialog from "../../components/resourcedialog/ResourceDialog";
 
 const Resources = () => {
   const [resources, setResources] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [selected, setSelected] = useState(null);
 
   useEffect(() => {
     const getResources = async () => {
@@ -50,11 +52,14 @@ const Resources = () => {
 
       {!loading && !error && (
         <>
+          <p className="resources-message">Click any row for more details &#9733;</p>
+
           <ResourceTable
             title="VIDEOS"
             nameLabel="Channel"
             detailLabel="Type of Content"
             resources={videos}
+            onSelect={setSelected}
           />
 
           <ResourceTable
@@ -62,8 +67,16 @@ const Resources = () => {
             nameLabel="Store"
             detailLabel="Material"
             resources={shopping}
+            onSelect={setSelected}
           />
         </>
+      )}
+
+      {selected && (
+        <ResourceDialog
+          resource={selected}
+          closeDialog={() => setSelected(null)}
+        />
       )}
     </div>
   );
