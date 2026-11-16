@@ -4,3 +4,35 @@
   font-size: x-large;
   padding: 40px 20px;
 }
+
+.add-bar {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.add-open {
+  padding: 10px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--highlight);
+  background-color: var(--bg-dark);
+  border: none;
+  border-radius: 120px;
+  cursor: pointer;
+}
+
+.add-open:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.add-notice {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 8px 20px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--bg-dark);
+  background: var(--rainbow);
+  border-radius: 120px;
+}
